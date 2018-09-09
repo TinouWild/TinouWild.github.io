@@ -1,3 +1,90 @@
+/* Intégration des polices */
+
+/* Pour les titres */
+
+@font-face {
+	font-family: "anicb___";
+	src: url('Font/anicb___.ttf');
+}
+@font-face {
+	font-family: "anicm___";
+	src: url('Font/anicm___.ttf');
+}
+@font-face {
+	font-family: "anirb___";
+	src: url('Font/anirb___.ttf');
+}
+@font-face {
+	font-family: "anirm___";
+	src: url('Font/anirm___.ttf');
+}
+
+/* Pour les symboles */
+
+@font-face {
+	font-family: "tngan";
+	src: url('Font/tngan.ttf');
+}
+@font-face {
+	font-family: "tnganb";
+	src: url('Font/tnganb.ttf');
+}
+@font-face {
+	font-family: "tnganbi";
+	src: url('Font/tnganbi.ttf');
+}
+@font-face {
+	font-family: "tngani";
+	src: url('Font/tngani.ttf');
+}
+
+body
+{
+	background-image: url('Images/bg_light.png');
+}
+
+/* Pour le texte */
+
+@font-face {
+	font-family: "partybusiness";
+	src: url('Font/partybusiness.ttf');
+}
+
+/* CSS pour la navbar */
+
+li {
+    float: left;
+    position:relative;
+}
+
+.divider {
+    position: absolute;
+    right:-1px;
+    top:10px;
+    color: white;
+}
+
+.navbar
+{
+	background-color: orange;
+}
+
+.navbar a
+{
+	color: white;
+	font-family: "anicb___";
+}
+
+.navbar .collapse
+{
+	justify-content: right;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
 /* Les différents containers */
 .containerRing
 {
@@ -28,14 +115,13 @@
 	width:100px;
 }
 
-.nav {
-	border-bottom:solid white 10px;
+.nav nav-link
+{
+	color: white;
 }
 
-#carouselExampleControls
-{
-	border-bottom: solid white 10px;
-}
+/* CSS du footer */
+
 
 footer
 {
@@ -43,11 +129,6 @@ footer
 }
 
 footer a
-{
-	color: white;
-}
-
-.nav nav-link
 {
 	color: white;
 }
@@ -60,30 +141,141 @@ footer a
 	border-bottom:solid white 10px;
 }
 
-/* Css du hover Gandalf */
-
-.texteSurvol
+.carousel-caption
 {
-  position: absolute;
-    top: 2%;
-    font-size: 25px;
-    font-family: arial;
-    text-align: center;
-    margin-left: 15%;
-  background-color: white;
-    opacity: 0.8;
-    padding: 10%;
-    border-radius: 15%;
+	position: absolute;
+  	top: 50%; /* poussé de la moitié de hauteur du référent */
+  	transform: translateY(-25%); /* tiré de la moitié de sa propre hauteur */
 }
 
-.texteSurvol strong
+h3
+{
+	font-size: 5vw;
+	font-family: "partybusiness";
+}
+h4
+{
+	font-size: 4vw;
+	font-family: "partybusiness";
+}
+
+/*CSS Fellows */
+h2
+{
+	margin-top: 3vw;
+	margin-left: 7%;
+}
+.symbole
+{
+	font-family: "tngan";
+	color: orange;
+	font-size: 2vw;
+}
+
+.titre
+{
+	font-family: "anirb___";
+	font-size: 75%;
+}
+.soustitre
+{
+	font-family: "anicb___";
+	font-size:50%;
+}
+
+/* CSS du Pills */
+
+.pills
+{
+	margin: 3vw;
+}
+
+.pills a
+{
+	font-family: "anicb___";
+}
+
+.pills .nav-link
+{
+	color: grey;
+}
+.pills .nav-link-active
+{
+	color:orange;
+	text-decoration: underline orange;
+}
+
+/* CSS des portraits */
+
+.card-deck
+{
+	margin: 2%;
+}
+
+.card-body
+{
+	font-family: "partybusiness";
+	color:white;
+	font-size: 200%;
+}
+
+.bloc
+{
+	margin: 2%;
+}
+
+
+/* Css du hover Gandalf */
+
+.card-title
+{
+	position: absolute;
+	bottom:30%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: "partybusiness";
+	color: white;
+}
+
+h5
+{
+	font-size: 300%;
+}
+
+.gimli h5
+{
+	text-decoration: line-through orange;
+}
+
+.card
+{
+	background-color: black;
+}
+
+.textesurvol
+{
+  position: absolute;
+  top:5%;
+  left: 5%;
+  right:5%;
+  background-color: white;
+    opacity: 0.7;
+    padding: 1%;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 200%;
+    font-family: "partybusiness";
+}
+
+.textesurvol strong
 {
   color: orange;
 }
 
 .bloc img
 {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .bloc img:hover
@@ -91,41 +283,37 @@ footer a
   opacity: 1;
 }
 
-.bloc img:hover + .texteSurvol
+.bloc img:hover + .textesurvol
 {
   display: none;
 }
 
-/* Css du Dead */
-
-.textemort 
+.bloc img:hover ~ .card-title
 {
-	position: absolute;
-    top: 35%;
-    font-family: arial;
-    text-align: center;
-    margin-left: 25%;
-	text-align: justify;
-	font-size: 40px;
-	font
+	left:50%;
+	transform: translateX(-50%);
+	bottom:50%;
 }
 
-.bloc img:hover + .textemort
+
+/* Css du Dead */
+
+.mort
+{
+	position: absolute;
+    top:10%;
+    left:50%;
+    transform: translateX(-50%);
+    font-family: "partybusiness";
+    font-size: 300%;
+    color:orange;
+}
+
+.bloc img:hover + .mort
 {
 	display: none;
 }
 
-/* Mise en forme des titres */
-
-h2
-{
-	text-align: center;
-}
-
-h5
-{
-	text-align: right;
-}
 
 /* Best Hunters */
 
@@ -138,6 +326,13 @@ h5
 .containerHunters card-body
 {
 	display:row;
+}
+
+/* Marges */
+
+.card-deck
+{
+	margin-top: 3vw;
 }
 
 /* Tableau */

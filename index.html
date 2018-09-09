@@ -11,9 +11,9 @@
 
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
+			<nav class="navbar navbar-expand-md">
 				<!-- Brand -->
-				<a class="navbar-brand" href="#">findThePrecious</a>
+				<img src="Images/logo.png" alt="Logo Find The Precious"/>
 
 				<!-- Toggler/collapsibe Button -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -24,19 +24,22 @@
 				<div class="collapse navbar-collapse" id="collapsibleNavbar">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="#">The Ring</a>
+							<a class="nav-link" href="#">Fellows</a><span class="divider">|</span>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Get my reward</a>
+							<a class="nav-link" href="#">The Ring</a><span class="divider">|</span>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Best Hunters</a>
+							<a class="nav-link" href="#">Reward</a><span class="divider">|</span>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Join the army</a>
+							<a class="nav-link" href="#">Hunters</a><span class="divider">|</span>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact us</a>
+							<a class="nav-link" href="#">Join</a><span class="divider">|</span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -48,24 +51,24 @@
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   			<div class="carousel-inner">
     			<div class="carousel-item active">
-      				<img class="d-block w-100" src="https://vignette.wikia.nocookie.net/seigneur-des-anneaux/images/c/cf/Bilbon_et_frodon.jpg/revision/latest?cb=20130809084817&path-prefix=fr" alt="First slide">
+      				<img class="d-block w-100" src="Images/dark_vador.jpg" alt="First slide">
       				<div class="carousel-caption d-none d-md-block">
-      					<h5>Petite fiesta avec Oncle Bilbo</h5>
-      					<p>"Ta fête d'anniversaire a déchiré un max !"</p>
+      					<h3>Sauron is a very good bro,</h3>
+      					<h4>Please help him to find his ring!</h4>
       				</div>
     			</div>
     			<div class="carousel-item">
       				<img class="d-block w-100" src="https://vignette.wikia.nocookie.net/seigneur-des-anneaux/images/f/f7/Troll_des_cavernes_et_frodon.jpg/revision/latest?cb=20130809091925&path-prefix=fr" alt="Second slide">
       				<div class="carousel-caption d-none d-md-block">
-      					<h5>Mauvaise rencontre au détour d'un coin</h5>
-      					<p>"La dernière fois qu'il s'est brossé les dents c'était y'a 10 ans !"</p>
+      					<h3>Exemple 2</h3>
+      					<h4>Please help him to find his ring!</h4>
       				</div>
     			</div>
     			<div class="carousel-item">
       				<img class="d-block w-100" src="https://vignette.wikia.nocookie.net/seigneur-des-anneaux/images/8/88/Chambre_bilbon_avec_frodon.jpg/revision/latest?cb=20130805150819&path-prefix=fr" alt="Third slide">
       				<div class="carousel-caption d-none d-md-block">
-      					<h5>Rien de mieux qu'une expérience dans la chambre</h5>
-      					<p>"Allez montre moi l'anneau sale gosse !"</p>
+      					<h3>Exemple 3</h3>
+      					<h4>Please help him to find his ring!</h4>
       				</div>
     			</div>
   			</div>
@@ -79,51 +82,67 @@
   			</a>
 		</div>
 
-		<h2 class="Fellows"><strong>Fellows wanted dead</strong> (or alive if you want to eat them later)</h2>
+		<h2 class="Fellows"><span class="symbole">ij</span> <span class="titre">Fellows wanted dead</span> <span class="soustitre">(or alive if you want to eat them later) </span><span class="symbole">ij</span></h2>
 
 		<!-- Mise en place du Pills -->
-		<ul class="nav nav-pills justify-content-center">
-  			<li class="nav-item">
-    			<a class="nav-link active" href="#">Most Wanted</a>
-  			</li>
-  			<li class="nav-item">
-    			<a class="nav-link" href="#">Most Dangerous</a>
-  			</li>
-		  	<li class="nav-item">
-		    	<a class="nav-link" href="#">Already Captured</a>
-		  	</li>
-		</ul>
+		<div class="pills">
+			<ul class="nav nav-pills justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Most Wanted</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link-active" href="#"><span class="symbole">b</span> <span class="dangerous">Most Dangerous</span> <span class="symbole">b</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Already Captured</a>
+				</li>
+			</ul>
+		</div>
 
 		<!-- Mise en place des Cards -->
 
 		<div class="card-deck">
 		  <div class="card">
 		  	<div class="bloc">
-		  		<img class="card-img" src="https://spellforce.com/wp-content/uploads/2017/05/icons_orc_thug.png" alt="Gandalf" />
-		  		<p class="texteSurvol">reward <strong>1000</strong><br /> golden coins</p>
+		  		<img class="card-img" src="Images/gandalf.png" alt="Gandalf" />
+		  		<div class="textesurvol">
+		  			<p>reward<br /> <strong>1000</strong> golden coins</p>
+	  			</div>
+	  			<div class="card-title">
+	  				<h5>Gandalf</h5>
+	  			</div>
 		  	</div>
 		    <div class="card-body">
-		      <h5 class="card-title">The Wizard</h5>
 		      <p class="card-text">Small Description...</p>
 		    </div>
 		  </div>
 		  <div class="card">
 		  	<div class="bloc">
-		  		<img class="card-img" src="https://vignette.wikia.nocookie.net/spellforce/images/e/e8/Orc_Titan.jpg/revision/latest?cb=20180119113011" alt="Gandalf" />
-		  		<p class="textemort">DEAD</p>
+		  		<img class="card-img" src="Images/aragorn.png" alt="Aragorn" />
+		  		<div class="textesurvol">
+		  			<p>reward<br /> <strong>1000</strong> golden coins</p>
+	  			</div>
+	  			<div class="card-title">
+	  				<h5>Aragorn</h5>
+	  			</div>
 		  	</div>
 		    <div class="card-body">
-		      <h5 class="card-title">Hobbit #3</h5>
 		      <p class="card-text">Small Description...</p>
 		    </div>
 		  </div>
 		  <div class="card">
 		  	<div class="bloc">
-		  		<img class="card-img" src="https://is1-ssl.mzstatic.com/image/thumb/Purple71/v4/c7/d6/1a/c7d61a84-ea43-211f-008f-d071c5c1668d/source/256x256bb.jpg" alt="Gandalf" />
-		  		<p class="texteSurvol">reward <strong>1000</strong><br /> golden coins</p>
+		  		<img class="card-img" src="Images/gimli.png" alt="Gimli" />
+		  		<div class="mort">
+		  			<p>dead</p>
+	  			</div>
+	  			<div class="gimli">
+	  				<div class="card-title">
+	  					<h5>Gimli</h5>
+	  				</div>
+	  			</div>
 		  	</div>
 		    <div class="card-body">
-		      <h5 class="card-title">Yummy Dwarf</h5>
 		      <p class="card-text">Small Description...</p>
 		    </div>
 		  </div>
